@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>form-beutifull</title>
+	<style type="text/css">
+		*{
+			box-sizing: border-box;
+		}
+		body{
+			background: url('React-JS-Logo-1024x576.png') center center/cover no-repeat fixed;
+			text-transform: capitalize;
+			font-size: 1.5em;
+		}
+		form{
+			font-family: "times new roman";
+		}
+		.header{
+			text-align: center;
+			color: white;
+		}
+		.header p{
+			color: black;
+		}
+		.container{
+			width: 60%;
+			margin: auto;
+			background-color: rgba(0,0,0,0.8);
+			padding: 30px 40px;
+			border-radius: 8px;
+		}
+		label{
+			color: white;
+		}
+		[type="text"],[type=email],[type=number],[type="submit"],select,textarea{
+			padding: 15px;
+			width: 100%;
+			border-radius: 5px;
+			margin:10px 0;
+			font-size: 17px;
+		}
+		[type="radio"],[type="checkbox"]{
+			margin: 10px 0;
+		}
+		input:focus,select:focus,textarea:focus{
+			border:3px solid teal;
+		}
+		textarea{
+			resize: vertical;
+		}
+		[type="submit"]{
+			background-color: darkcyan;
+			font-size: 20px;
+			color: white;
+			border:none;
+		}
+		[type="radio"],[type="checkbox"]{
+			margin-right: 8px;
+		}
+		[type="submit"]:hover{
+			cursor: pointer;
+			background-color: seagreen;
+		}
+		select,[type="radio"],[type="checkbox"],[type="number"]:hover{
+			cursor: pointer;
+		}
+		select:hover,[type="text"]:hover,[type="number"]:hover,[type="email"]:hover,textarea:hover{
+			background-color: #bbb;
+		}
+	</style>
+</head>
+<body>
+<div class="header">
+   <h1>self introduction form</h1>
+   <p><i>fill in the information accurately.</i></p>
+</div>
+<div class="container">
+	<form>
+		<label for="f-name">name :</label><br>
+		<input type="text" name="f-name" id="f-name" placeholder="Enter your name ..."><br>
+		<label for="l-name">last-name :</label><br>
+		<input type="text" name="l-name" id="l-name" placeholder="Enter your last-name ..." required><br>
+		<label for="email">email :</label><br>
+		<input type="email" name="email" id="email" placeholder="Enter your email ..." required><br>
+		<label for="age">age :</label><br>
+		<input type="number" name="age" id="age" min="10" max="90" placeholder="10"><br>
+		<label for="city">city :</label><br>
+		<select id="city">
+			<option>birjand</option>
+			<option>tehran</option>
+			<option>mashhad</option>
+			<option>freidun kenar</option>
+			<option>other</option>
+		</select><br><br>
+		<label>gender :</label><br>
+		<input type="radio" name="gender" id="male">
+		<label for="male">male</label><br>
+		<input type="radio" name="gender" id="female">
+		<label for="female">female</label><br><br>
+		<label for="job">your career :</label><br>
+		<select id="job">
+			<option>student</option>
+			<option>collegian</option>
+			<option>employee</option>
+			<option>freelance</option>
+		</select><br><br>
+	<label>what is your favorite sport?</label><br>
+	<input type="checkbox" name="sport1" id="sport1" value="swim">
+	<label for="sport1"> swim</label><br>
+	<input type="checkbox" name="sport2" id="sport2" value="soccer">
+	<label for="sport2"> soccer</label><br>
+	<input type="checkbox" name="sport3" id="sport3" value="ship">
+	<label for="sport3">ship</label><br>
+	<input type="checkbox" name="sport4" id="sport4" value="volleyball">
+	<label for="sport4">volleyball</label><br>
+	<input type="checkbox" name="sport5" id="sport5" value="chess">
+	<label for="sport5">chess</label><br><br><br>
+	<label for="textarea">request :</label><br>
+	<textarea placeholder="Enter your request ..."></textarea><br><br>
+	<input type="submit" value="Submit">
+	</form>
+</div>
+</body>
+</html>
